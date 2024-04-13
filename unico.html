@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" href="https://i.postimg.cc/8s8LnN55/aweto.png">
+    <link rel="stylesheet" media="screen and (max-width:700px)" href="css/mob/cabeçalho.css">
+    <link rel="stylesheet" media="screen and (max-width:700px)" href="css/mob/main.css">
+    <link rel="stylesheet" media="screen and (max-width:700px)" href="css/mob/unico.css">
+    <link rel="stylesheet" media="screen and (max-width:700px)" href="css/mob/produtos.css">
+    <link rel="stylesheet" href="css/style/header.css">
+    <link rel="stylesheet" href="css/style/main.css">
+    <link rel="stylesheet" href="css/style/unico.css">
+    <link rel="stylesheet" href="css/style/produtos.css">
+    <title>Loja Aweto</title>
+
+</head>
+<body>
+    <style>
+        @media (max-width:700px) {
+            body,html{
+            padding: 0px;
+            margin:0px;
+            width:100%;
+           overflow-x: hidden;
+        }
+        /*ATIVAR PARA MOBILE*/
+           #header-sub, #header-sup,.header-infor,#logomob,
+           .fundo-inputmob{
+            display: flex;
+           }    
+
+           /*ATIVAR MENU INTERÁTIVO*/
+            .ativarscrols{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            z-index: 2;
+            }
+
+            /*CONFIGURAÇÕES DO MENU INTERÁTIVO*/
+           .config-menu{
+            display: none;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 100%;
+            background-color: #0c212d;
+            position: absolute;
+            margin-left: -10px;
+            margin-top: 660px;
+            overflow-y: auto;
+           } 
+           
+           .ativar-configmenu{
+            display: flex;
+            }
+           
+            /*desativar para */
+            .fundo-pesquisa{
+                display: none;
+            }
+            .lupa-pesquisa{
+            display: none;
+            height: 100%;
+            overflow: hidden;
+            transform: translateY(-50px );
+            }
+
+            /*MAIN*/
+
+
+        
+        }
+    </style>
+
+<header class="headermob">
+
+    <!--LOGOTIPO DESKTOP-->
+    <img src="aweto.png" alt="" id="logodesk">
+
+    <!--Menu mobile-->
+    <article class="menu">
+
+        <i class="bi bi-list" id="icone-menu"></i>
+
+            <!--BLOCO MENU MOBILE-->
+            <div class="config-menu">
+
+            <div class="config-fechar-menu">
+                <img src="logoaweto.png" alt="" id="logotipo-menu">
+                <i class="bi bi-x" id="icone-fechar-menu"></i>
+            </div>
+          
+            <!--OPÇÃO MENU MOBILE-->
+            <div class="seçao-menu">
+                <div class="menu-catalogo">
+                    <a href="" id="pagina-menu">Religião</a>
+                    <a href="" id="pagina-menu">Desenvolvimento</a>
+                    <a href="" id="pagina-menu">Gratuítos</a>
+                    <a href="" id="pagina-menu">Todos</a>
+                </div>
+
+                <div class="menu-redesociais">
+                    <i class="bi bi-whatsapp" id="menu-icone-redes"><p id="texto-menu-redesociais">11 95375-8405</p></i>
+                    <i class="bi bi-instagram" id="menu-icone-redes"><p id="texto-menu-redesociais">@institutoaweto</p></i>
+                    <i class="bi bi-facebook" id="menu-icone-redes"><p id="texto-menu-redesociais">Instituto Aweto</p></i>
+                </div>
+
+                <div class="menu-sobrenos">
+                    <div id="sobrenos">
+                        <a href="" id="dados-sobrenos">Quem somos</a>
+    
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <!--BLOCO LOGOTIPO MOBILE-->
+            <article class="config-logo">
+            <img src="logoaweto.png" alt="" id="logomob">
+            </article>
+
+            <!--BLOCO LUPA MOBILE-->
+            <div class="config-lupa">
+            <i class="bi bi-search" id="icone-lupa"></i>
+            </div>
+            <div class="seçao-lupa">
+                <div class="fundo-input">
+                    <input type="text" id="mob-inputpesquisa" placeholder="Pesquisa">
+                    <i class="bi bi-x" id="close-menu-lupa"></i>
+                    <ul class="mob-lupapesquisa" id="listaseçao">
+                        <li class="mob-dadoslupa"><a href="" >Religião</a></li>
+                        <li class="mob-dadoslupa"><a href="" >Desenvolvimento Social e Profissional</a></li>
+                        <li class="mob-dadoslupa"><a href="" >Gratuítos</a></li>
+                        <li class="mob-dadoslupa"><a href="" >Todos</a></li>
+                    </ul>
+                </div>
+            </div>
+
+    </article>
+    
+     <!--Menu interátivo-->
+    <article class="header-infor">
+
+
+            <nav>
+                <a href="religião.html" id="dados-menu">Religião</a>
+                <a href="" id="dados-menu">Desenvolvimento Socialaaaaaaaaa</a>
+                <a href="" id="dados-menu">Gratuítos</a>
+                <a href="" id="dados-menu">Todos</a>
+            </nav>
+
+    </article>
+
+    <!--LUPA DESKTOP-->
+    <article class="fundo-pesquisa">
+
+        <div class="lupa">
+            <i class="bi bi-search" id="icone-lupadesk"></i>
+        </div>
+        <div class="pesquisa">
+            <input type="text" name="" id="input-pesquisa" placeholder="O que procura">
+        </div> 
+        <ul class="lupa-pesquisa" id="listadesk">
+                
+                <li class="dados-lupa"><a href="" >Religião</a></li>
+                <li class="dados-lupa"><a href="" >Desenvolvimento Social e Profissional</a></li>
+                <li class="dados-lupa"><a href="" >Gratuítos</a></li>
+                <li class="dados-lupa"><a href="" >Todos</a></li>
+
+                <script>
+                    /*lupa desktop*/
+                    let fundolupa = document.querySelector('.fundo-pesquisa');
+                    let inputlupa = document.querySelector('#input-pesquisa');
+    
+                    inputlupa.addEventListener('input', function(){
+                    fundolupa.classList.add('ativar-lupa')
+                    });
+    
+                    inputlupa.addEventListener('mouseout', function(){
+                    fundolupa.classList.remove('ativar-lupa')
+                    });
+    
+                    const pesquisainput = document.getElementById('input-pesquisa');//Barra de Pesquisa
+                    const produtoinput  = document.getElementById('listadesk').getElementsByTagName('li'); //Lista + Dados
+                    
+                    pesquisainput.addEventListener('input',function(){
+                    const pesquisaterminal = pesquisainput.value.toLowerCase();
+    
+                    for (let i = 0; i < produtoinput.length; i++){
+                        const produtonome = produtoinput[i].innerText.toLowerCase();
+                        if (produtonome.includes(pesquisaterminal)){
+                            produtoinput[i].style.display = 'block'; 
+                        } else{
+                            produtoinput[i].style.display = 'none';
+                        }};
+                    });
+                </script>
+        </ul>
+
+    </article>
+
+</header>
+    
+    <section>
+
+        <article class="produto-detalhes">
+
+    <div class="fundo-imagem" id="fundo-imagem">
+                <img class="imagem-produto" id="imagem-produtomob" src="" alt="Produto">
+    </div>
+    <div class="seçao-desk" id="seçao-desk">
+
+    <div class="fundo-produto" id="fundo-produto">
+        <span class="product-name" id="product-name"></span>
+    </div>
+
+    <div class="fundo-preço" id="fundo-preço">
+
+        <div class="fundo-preçoesquerdo">
+            <span class="valor-antigo">De <s>R$49,90</s> Por</span>
+            <span class="product-price"></span>
+            <span class="price-parcela">Por: R$40 parcelado em  10x Sem Juros</span>
+        </div>
+
+        <div class="fundo-preçodireito">
+            <p id="texto-formapag">Forma de Pagamento:</p>
+            <p id="texto-pag">Pix , Débito e Crédito</p>
+        </div>
+
+    </div>
+
+    <div class="fundo-icones" id="fundo-icones">
+        <i class="bi bi-journals" id="produto-infor"><span class="produto-infor" id="produto-quantidade"></span></i><!-- quantidade de pagina-->
+
+        <i class="bi bi-person-bounding-box" id="produto-infor"><span class="produto-idade" ></span></i><!--idade-->
+
+        <i class="bi bi-journal-text" id="produto-infor"><span class="produto-infor" >Formato Ebook</span></i><!--formato-->
+
+        <i class="bi bi-globe-europe-africa"  id="produto-infor"><span class="produto-infor">Idioma Brasileiro</span></i>
+    </div>
+    
+</div>
+           
+
+            <div class="fundo-sinopse" id="fundo-sinopse">
+
+                <p id="titulo-sinopse">Sinopse</p>
+          
+                <p class="product-sinopse"></p>
+
+            </div>
+
+            <div class="fundo-imagem">
+
+            </div>
+
+         
+
+        </article>
+    </section>
+  
+    <main class="mainmob">
+        <article class="fundo-carrosel" id="fundo-carrossel">
+
+            <div class="mySlides fade" id="slidemob">
+                <img src="https://i.postimg.cc/HnFtDbST/banner1.jpg" class="img-slideshow" id="img-slideshow">
+            </div>
+        
+            <div class="mySlides fade" id="slidemob">
+                <img src="https://i.postimg.cc/MZL5Q8zg/banner2.jpg" class="img-slideshow" id="img-slideshow">
+            </div>
+        
+            <div class="mySlides fade" id="slidemob">
+                <img src="https://i.postimg.cc/VN4Bsx7G/banner3.jpg" class="img-slideshow" id="img-slideshow">
+            </div>
+
+            
+            <div class="mySlides fade" id="slidemob">
+                <img src="https://i.postimg.cc/VN4Bsx7G/banner3.jpg" class="img-slideshow" id="img-slideshow">
+            </div>
+        
+            
+
+            <script>
+                // ATIVAÇÃO DO CARROSSEL
+        var slideIndex = 0;
+        showSlides();
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}
+          slides[slideIndex-1].style.display = "block";
+          setTimeout(showSlides, 3000); // Change image every 2 seconds
+        }
+        // Next/previous controls
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        function addcarro(){
+          const titulocarro = document.querySelector(".titulo-produto-carrinho");
+          const titulobloco = document.querySelector(".titulo-produto")
+          
+          document.getElementById('titulo-produto-carrinho').innerHTML = 'titulobloco'
+        }
+            </script>
+        </article>
+    </main>
+
+    
+    <script src="js/unico.js"></script>
+    <script src="js/header.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

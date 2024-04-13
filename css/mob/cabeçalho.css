@@ -11,6 +11,7 @@ body{
     overflow-x: hidden;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 .headermob{
     display: flex;
     flex-wrap: wrap;
@@ -21,6 +22,7 @@ body{
     width: 100%;
     margin: 0;
 }
+
 /* menu desativado */
 .menu{
     display: flex;
